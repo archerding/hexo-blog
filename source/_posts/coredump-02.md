@@ -61,7 +61,7 @@ Program terminated with signal SIGQUIT, Quit.
 
 `SIGABRT `信号表示调用abort函数；编写新的测试程序，尝试调用一下`abort()`函数验证一下；
 
-```
+```c
 #include <stdlib.h>
 
 int main()
@@ -127,7 +127,7 @@ on this backtrace.
 
 `SIGFPE`信号表示一个算术运算异常，例如除以0，浮点溢出等；编写新的测试程序，尝试产生`SIGFPE`信号；
 
-```
+```c
 #include <stdlib.h>
 
 int calc(int num)
@@ -235,7 +235,7 @@ End of assembler dump.
 
 `SIGSEGV `信号表示进程进行了一次无效的存储访问，EGV表示段违例（segmentation violation）；编写新的测试程序，尝试产生`SIGSEGV  `信号；
 
-```
+```c
 #include <stdlib.h>
 
 const char *str = "hello World!";

@@ -12,7 +12,7 @@ tags:
 JavaScript只支持一维数组，但是通过在数组里保存数组元素的方式，可以轻松创建多维
 数组。
 ### 创建二维数组
-```
+```javascript
 var twod = [];
 var rows = 5;
 for (var i = 0; i < rows; ++i) {
@@ -24,7 +24,7 @@ console.log(twod);//[ [], [], [], [], [] ]
 <!--more-->
 
 为数组类添加方法matrix(行数,列数,初始值),用于创建二维数组并初始化.
-```
+```javascript
 Array.matrix = function(rows,cols,initial){
     var arr = [];
     for(var i = 0; i < rows; i++){
@@ -50,7 +50,7 @@ console.log(strs);
 */
 ```
 ### 对象数组
-```
+```javascript
 function Point(x,y){
     this.x = x;
     this.y = y;

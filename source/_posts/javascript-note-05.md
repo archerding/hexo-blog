@@ -22,7 +22,7 @@ tags:
 
 <!--more-->
 
-```
+```javascript
 function Stack(){
     this.dataStore = [];
     this.top = 0;
@@ -44,7 +44,7 @@ function Stack(){
 }
 ```
 ### 使用栈
-```
+```javascript
 var  s = new Stack();
 s.push('iDarker');
 s.push('xiachuan');
@@ -65,7 +65,7 @@ console.log('peek:' + s.peek());      //peek:undefined
 
 - 十六进制转为十进制  (这个问题不应该用栈解决,数组本身比这更好,想岔了 (ˇˍˇ))
 
-```
+```javascript
 function Hex2Dec(hex){
     var chars = hex.toUpperCase().split('').reverse(); //统一转换为大写-->分割成字符数组-->倒序排列
     var stack = new Stack();
@@ -92,7 +92,7 @@ console.log(Hex2Dec('121ABCcd')); // 303742157
 ```
 - 十进制转为十六进制/二进制/8进制
 
-```
+```javascript
 function convert(num,base){
     var s = new Stack();
     do{
@@ -120,7 +120,7 @@ console.log(convert(303742157,20)); //4EI7F7H (ˇˍˇ) ～
 ```
 - 数组的reverse函数
 
-```
+```javascript
 Array.prototype.myReverse = function(){
     var s = new Stack();
     this.forEach(function(element){
@@ -141,7 +141,7 @@ console.log(nums);                      // [ 5, 4, 3, 2, 1 ]
 - 判断字符串是否为回文
 回文是指这样一种现象： 一个单词、 短语或数字， 从前往后写和从后往前写都是一样的。
 
-```
+```javascript
 function isPalindrome(word) {
     var s = new Stack();
     for (var i = 0; i < word. length; ++i) {
@@ -174,7 +174,7 @@ if (isPalindrome(word)) {
 - 用栈实现函数的递归调用
 求阶乘5! = 5*4*3*2*1 = 120
 
-```
+```javascript
 function  factorial(n){
     if(n == 0){
         return 1;

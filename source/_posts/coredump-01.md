@@ -33,7 +33,7 @@ Core信息包括了进程信息、内存信息、寄存器信息、堆栈信息�
 我们知道了程序在**程序崩溃**或者**异常终止**的时候会产生core文件呢？那么使用`kill -9`会产生core文件吗？
 我们不妨做个试验。我们给helloword程序加上死循环来进行测试。
 
-```
+```c
 #include <stdio.h>
 
 int main(int argc, char **argv)

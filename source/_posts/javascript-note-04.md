@@ -9,7 +9,7 @@ tags:
 ---
 
 #### JavaScript学习笔记-列表
-```
+```javascript
 function List(){
   this.listSize = 0;
   this.pos = 0;
